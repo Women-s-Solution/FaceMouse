@@ -1,0 +1,213 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(180deg, #111122, #1c1c33);
+  color: #e0e0e0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color:#283f78;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  font-family: quicksand;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.6);
+}
+
+.navbar .logo img {
+  height: 60px;
+  
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar .menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar .menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #00f7ff;
+  transition: width 0.3s ease;
+}
+
+.navbar .menu a:hover::after {
+  width: 100%;
+}
+
+.navbar .icones img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 6px #00f7ff);
+}
+
+h3{
+  color: #fff;
+  text-align: left;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+/*Formulário*/
+#submit{
+  text-align: center;    
+}
+
+label, input, select, textarea{
+  display: block ;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  border-radius: 20px;
+}
+
+input, textarea{
+  background-color: #f7f7f7;
+  color: #000;
+}
+
+.info-obrigatoria{
+  filter: drop-shadow(0 0 6px #00f7ff);
+}
+
+p{
+  color: #00f7ff;
+  text-align:right;
+}
+
+h2{
+  padding: 30px;
+  color:#00f7ff;
+  text-align: center; 
+}
+
+form{
+  display: grid;
+  grid-template-areas: 
+  'nome telefone'
+  'email assunto'
+  'mensagem mensagem'
+  'info info'
+  'enviar enviar';
+  justify-content: center;
+  grid-template-columns: 250px 250px;
+  margin-left: 40px;
+}
+
+.enviar{
+  grid-area: 'botao';
+  margin-left: 130px;
+}
+
+#enviar{
+  color: #fff;
+  background-color: #283f78;
+  width: 190px;
+  height: 50px;
+  border: none;
+}
+
+#enviar:hover{
+  background-color: #39508b;
+  cursor: pointer;
+}
+
+textarea:hover, input:hover{
+  border: 2px solid #FFD54F;
+}
+
+.contato{
+  display: inline-flex;
+  margin-left: 27%;
+  margin-top: 30px;
+  width: 90vh;
+}
+
+.contato img{
+  margin-left: 10%;
+  width: 30px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* transforma em branco */
+  cursor: pointer;
+}
+
+h4{
+  font-weight: 1;
+  padding: 10px;
+}
+
+/*Footer*/
+.footer {
+  display: flex;
+  align-items: center;       /* centraliza verticalmente */
+  background-color: #253c78;
+  height: 100%;
+  margin-top: 100px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-right: 20px; /* dá um respiro da borda */
+  justify-content: space-between;
+}
+
+#logo-3 {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+#icones {
+  width: 40px;       /* ajusta tamanho */
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* transforma em branco */
+  cursor: pointer;   /* dá sensação de botão/link */
+}
+
+.footer-content{
+  justify-content: flex-start;
+  margin-right: 52%;
+}
+
+.footer-content p{
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#cnpj{
+  font-weight: bold;
+}
+
+.footer .row{
+  display: inline-block;
+  margin-left: 5%;
+}

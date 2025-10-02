@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="./contato.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+  <header class="navbar">
+    <div class="logo">
+       <img id="logo" src="./img/logo faceMouse.jpg" alt=""> 
+    </div>
+
+    <nav class="menu">
+      <a href="index.html">Home</a>
+      <a href="barreirasEnfrentadas.html">Barreiras Enfrentadas</a>
+      <a href="facemouse.html">Face Mouse</a>
+      <a href="aplicacao.html">Aplicação</a>
+      <a href="sobrenos.html">Sobre nós</a>
+    </nav>
+
+    <div class="icones">
+      <a href="contato.html"><img id="logo-2" src="./img/logo-2.png" alt=""></a>
+    </div>
+  </header>
+
+<!-- Formulário -->
+    <h2>Preencha o formulário para nossa equipe entrar em contato</h2>
+
+    <form id="cadastroUsuarioForm">
+    <div class="nome">
+		<label for="nome"> Nome*:</label>
+		<input type="text" name="nome" id="nome" required="required" autofocus><br>
+    </div>
+
+    <div class="telefone">
+    <label for="telefone"> Telefone*:</label>
+		<input type="telefone" name="telefone" id="telefone" required placeholder="Exemplo: (19) 123456789"><br>
+    </div>
+    
+    <div class="email">
+		<label for="email"> E-mail*:</label>
+		<input type="email" name="email" id="email" required placeholder="Exemplo: email@gmail.com"><br>
+    </div>
+
+    <div class="assunto">
+    <label for="assunto"> Assunto*:</label>
+		<input type="text" name="assunto" id="assunto" required="required" autofocus><br>
+    </div>
+
+    <div class="mensagem">
+      <label for="mensagem"> Mensagem:</label>
+		  <textarea type="text" name="mensagem" id="mensagem" required="required" autofocus rows="10" cols="55"></textarea><br>
+    </div>
+
+    <p class="info-obrigatoria">*campos obrigatórios</p>
+
+    <div class="enviar">
+    <input type="submit" value="ENVIAR" id="enviar">
+    </div>
+		</form> 
+        
+    <script src="./script/contato.js"></script>
+
+    <div class="contato">
+    <img id="telefone-icone" src="./img/iconeTelefone.png" alt="">
+    <h4>Telefone: (15) 99101-0101</h4>
+    <img id="email-icone" src="./img/iconeEmail.png" alt="">
+    <h4>Email: contato@facemouse.org.br</h4>
+    </div>
+
+<!-- Footer -->
+  <footer class="footer">
+  <div class="row">
+  <img id = "icones" src="./img/Icone-Instagram.png" alt="">
+  <img id = "icones" src="./img/Icone-Whatsapp.png" alt="">
+  <div class="footer-content">
+  <p id="cnpj">CNPJ: 12.345.678/0001-91</p>
+  <p>contato@facemouse.org.br</p>
+  </div>
+  </div>
+  <img id="logo-3" src="./img/logo faceMouse.jpg" alt="">
+  </footer>
+ 
+</body>
+</html>

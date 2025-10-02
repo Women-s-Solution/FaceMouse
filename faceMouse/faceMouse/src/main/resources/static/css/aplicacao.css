@@ -1,0 +1,232 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(180deg, #111122, #1c1c33);
+  color: #e0e0e0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color:#283f78;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  font-family: quicksand;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.6);
+}
+
+.navbar .logo img {
+  height: 60px;
+  
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar .menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar .menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #00f7ff;
+  transition: width 0.3s ease;
+}
+
+.navbar .menu a:hover::after {
+  width: 100%;
+}
+
+.navbar .icones img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 6px #00f7ff);
+}
+
+/* Image Section */
+.imghome {
+  width: 100%;
+  height: 70vh;
+  object-fit: cover;
+  border-bottom: 4px solid #00f7ff;
+}
+
+/* Conteúdo */
+p{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+#titulo-aplicacao{
+  display: flex;
+  justify-content: center;
+  color:#00f7ff;
+  filter: drop-shadow(0 0 6px #00f7ff);  
+  padding: 20px; 
+}
+
+#contexto-titulo{
+  color:#00f7ff;
+  filter: drop-shadow(0 0 6px #00f7ff);
+  padding: 10px;
+  margin-left: 80px;
+  margin-top: 40px;
+}
+
+h3{
+  margin-left: 80px;
+  padding: 10px;
+}
+
+.context{
+  display: grid;
+  grid-template-areas: 
+  'texto image';
+}
+
+.image-aplicacao{
+  height: 40vh;
+  margin-right: 80px;
+}
+
+/*Perguntas frequentes*/
+/* Estilos básicos para o contêiner */
+.faq-container {
+  width: 100%;
+  margin: 20px auto;
+  padding: 15px;
+  background-color: #253c78;
+  border-top:2px solid #00f7ff;
+  border-bottom:2px solid #00f7ff;
+}
+
+.faq-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Estilos para cada item da FAQ */
+.faq-item {
+  margin-bottom: 25px;
+  border: 1px solid #00f7ff;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Estilos para a pergunta (summary) */
+.faq-question {
+  padding: 15px;
+  cursor: pointer; /* Indica que é clicável */
+  font-weight: bold;
+  color: #fff;
+  background-color: #253c78;
+  border-radius: 5px 5px 0 0;
+  list-style: none; /* Remove os marcadores padrão */
+  display: flex; /* Permite o alinhamento do conteúdo */
+  justify-content: space-between; /* Move o ícone de expandir para a direita */
+}
+
+/* Adiciona uma seta ou ícone para expandir/recolher */
+.faq-question::after {
+  content: '▼'; /* Símbolo de seta para baixo */
+  transition: transform 0.2s ease;
+}
+
+/* Estilo para o estado aberto */
+.faq-item[open] .faq-question::after {
+  transform: rotate(180deg); /* Gira a seta quando aberto */
+}
+
+/* Estilos para a resposta (p) */
+.faq-answer {
+  padding: 15px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/*Footer*/
+.footer {
+  display: flex;
+  align-items: center;       /* centraliza verticalmente */
+  background-color: #253c78;
+  height: 100%;
+  margin-top: 100px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-right: 20px; /* dá um respiro da borda */
+  justify-content: space-between;
+}
+
+#logo-3 {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+#icones {
+  width: 40px;       /* ajusta tamanho */
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* transforma em branco */
+  cursor: pointer;   /* dá sensação de botão/link */
+}
+
+.footer-content{
+  justify-content: flex-start;
+  margin-right: 52%;
+}
+
+.footer-content p{
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  justify-content: flex-start;
+  margin-left: 0px;
+}
+
+#cnpj{
+  font-weight: bold;
+}
+
+.footer .row{
+  display: inline-block;
+  margin-left: 5%;
+}
+
+/* Animações */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
