@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
 					});
 					if (response.ok) {
 					alert("Mensagem enviada com sucesso :)");
-					window.location.href = "index.html"
+					window.location.href = "./index.html"
 					} else {
 					alert("Erro ao enviar mensagem :(");
 								}
