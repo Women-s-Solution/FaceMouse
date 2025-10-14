@@ -215,7 +215,6 @@ body {
   
   .imghome{
     height: 28vh;
-    width: 75vh;
   }
 
   /* Dropdown Button */
@@ -252,5 +251,17 @@ body {
   .dropdown:hover .dropdown-content {display: block;}
 
   .dropdown:hover .dropbtn {background-color: #00f7ff;}
+
+  #video iframe {
+    height: 90%;
+  }
+
+  .footer-content p{
+    font-size: medium;
+  }
+
+  .footer-content{
+    margin-right: 10%;
+  }
 
 }

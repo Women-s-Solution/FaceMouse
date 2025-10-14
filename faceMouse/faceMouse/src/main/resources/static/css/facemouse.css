@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+.dropdown{
+  display: none; /*para não aparecer em telas maiores*/
+}
+
 /* Navbar */
 .navbar {
   background-color:#283f78;
@@ -29,7 +33,6 @@ body {
 
 .navbar .logo img {
   height: 60px;
-  
 }
 
 .navbar .menu {
@@ -186,4 +189,84 @@ a{
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+@media(max-width: 768px){
+
+  .navbar .menu a {
+  display: none;
+  }
+
+  .navbar .logo{
+    display: none;
+  }
+
+  /* Dropdown Button */
+  .dropbtn img {
+    height: 60px;
+  }
+
+  .dropdown button{
+    border: none;
+    background-color: #253c78;
+  }
+
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #00f7ff;}
+
+  .introducao{
+    margin-top: 0px;
+    margin-left: 30px;
+    display: inline;
+  }
+
+  .facemouse-image{
+    margin-right: 0px;
+    height: 30vh;
+    width: 40vh;
+    object-fit: contain;
+  }
+
+  .texto, .conteudo{
+    margin-top: 0%;
+    padding: 30px;
+    font-size: medium;
+  }
+
+  .texto{
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 25px;
+  }
+
+  .footer-content p{
+    font-size: smaller;
+  }
+
+  .footer-content{
+    margin-right: 10%;
+  }
+
 }
