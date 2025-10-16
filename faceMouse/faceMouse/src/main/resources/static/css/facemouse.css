@@ -247,12 +247,14 @@ a{
     height: 30vh;
     width: 40vh;
     object-fit: contain;
+    margin-left: 7vw;
   }
 
   .texto, .conteudo{
     margin-top: 0%;
     padding: 30px;
     font-size: medium;
+    text-align: justify;
   }
 
   .texto{

@@ -283,6 +283,10 @@ a{
     font-size: medium;
   }
 
+  .tecnologias, .conteudo{
+    padding: 10vw;
+  }
+
   .tecnologias h2{
     font-size: 20px;
   }
@@ -291,12 +295,17 @@ a{
     font-size: medium;
   }
 
+  .tecnologias p{
+    text-align: justify;
+  }
+
   .tecnologias ul{
-    margin-top: medium;
+    margin-top: 10px;
   }
 
   #solucao-text{
     justify-content: center;
+    text-align: center;
   }
 
   .footer-content p{

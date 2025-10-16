@@ -211,3 +211,105 @@ h4{
   display: inline-block;
   margin-left: 5%;
 }
+
+@media(max-width: 768px){
+
+  .navbar .menu a {
+  display: none;
+  }
+
+  .navbar .logo{
+    display: none;
+  }
+
+  /* Dropdown Button */
+  .dropbtn img {
+    height: 60px;
+  }
+
+  .dropdown button{
+    border: none;
+    background-color: #253c78;
+  }
+
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #00f7ff;}
+
+  h2 {
+    font-size: medium;
+  }
+
+  form{
+  display: grid;
+  grid-template-areas: 
+  'nome'
+  'telefone'
+  'email'
+  'assunto'
+  'mensagem'
+  'enviar';
+  justify-content: flex-start;
+  grid-template-columns: 250px;
+  }
+
+  label, input, select, textarea{
+  padding: 8px;
+  margin-bottom: 2px;
+  }
+
+  #mensagem, #nome, #email, #telefone, #assunto{
+    width: 80vw;
+  }
+
+  .info-obrigatoria{
+    margin-right: 20vw;
+    margin-bottom: 3vh;
+  }
+
+  .enviar{
+    margin-left: 16vw;
+  }
+
+  .contato{
+    margin-left: 0;
+    width: 100vw;
+    font-size: small;
+  }
+
+  .contato img{
+    margin-left: 7%;
+    width: 20px;
+  }
+
+  .footer-content p{
+    text-align: start;
+    font-size: medium;
+  }
+
+  .footer-content{
+    margin-right: 10%;
+  }
+
+}

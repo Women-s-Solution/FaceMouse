@@ -169,7 +169,7 @@ h3{
 /* Estilos para a resposta (p) */
 .faq-answer {
   padding: 15px;
-  color: #666;
+  color: #000000;
   line-height: 1.5;
 }
 
@@ -283,6 +283,7 @@ h3{
   p{
   margin-left: 40px;
   margin-right: 40px;
+  text-align: justify;
   }
 
   #contexto-titulo{
