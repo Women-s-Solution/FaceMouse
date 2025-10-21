@@ -16,7 +16,7 @@ import com.facemouse.entities.Usuario;
 import com.facemouse.service.UsuarioService;
 
 @RestController
-@RequestMapping("/cadastrousuario")
+@RequestMapping("/usuarios")
 public class UsuarioController {
 
 	@Autowired
