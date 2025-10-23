@@ -185,7 +185,8 @@ a:hover{
   }
 }
 
-@media(max-width: 768px){
+/* Responsividade para celular e alguns tablets*/
+@media(max-width: 767px){
 
   .navbar .menu a {
   display: none;
@@ -260,6 +261,102 @@ a:hover{
   }
 
   .nomes{
+    font-size: small;
+    text-align: center;
+  }
+
+  h3{
+    font-size: small;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .footer-content p{
+    font-size: small;
+  }
+
+  .footer-content{
+    margin-right: 10%;
+  }
+}
+
+/* Responsividade para tablet*/
+@media(min-width: 768px) and (max-width: 900px){
+
+  .navbar .menu a {
+  display: none;
+  }
+
+  .navbar .logo{
+    display: none;
+  }
+
+  /* Dropdown Button */
+  .dropbtn img {
+    height: 60px;
+  }
+
+  .dropdown button{
+    border: none;
+    background-color: #253c78;
+  }
+
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #00f7ff;}
+
+  .image-sobrenos{
+    height: 50vh;
+    object-fit: contain;
+    margin-top: 5%;
+  }
+
+  #cards{
+    display: grid;
+    grid-template-areas: 
+    'card card'
+    'card card';
+    padding: 20px;
+    margin-left: 15vw;
+  }
+
+  .card{
+    width: 30vh;
+    height: 35vh;
+    background-color: #253c78;
+    border-radius: 30px;
+    margin: 10px;
+  }
+
+  .nossas-fotos{
+  align-items: center;
+  margin-top: 10px;
+  width: 25vh; /* Largura do quadrado */
+  height: 25vh; /* Altura do quadrado */
+  }
+
+  .nomes{
     font-size: medium;
   }
 
@@ -275,4 +372,5 @@ a:hover{
   .footer-content{
     margin-right: 10%;
   }
+
 }

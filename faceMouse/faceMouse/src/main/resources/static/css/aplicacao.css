@@ -235,7 +235,8 @@ h3{
   }
 }
 
-@media(max-width: 768px){
+/*responsividade para celular*/
+@media(max-width: 767px){
 
   .navbar .menu a {
   display: none;
@@ -301,7 +302,7 @@ h3{
   .image-aplicacao{
     height: 30vh;
     margin-right: 0px;
-    margin-left: 35px;
+    margin-left: 25vw;
   }
 
   .faq-item{
@@ -309,6 +310,84 @@ h3{
   }
 
   .footer-content p{
+    font-size: small;
+  }
+
+  .footer-content{
+    margin-right: 10%;
+  }
+}
+
+  /*  Responsividade para tablet*/
+  @media (min-width: 768px) and (max-width:900px){
+
+  .navbar .menu a {
+  display: none;
+  }
+
+  .navbar .logo{
+    display: none;
+  }
+
+  /* Dropdown Button */
+  .dropbtn img {
+    height: 60px;
+  }
+
+  .dropdown button{
+    border: none;
+    background-color: #253c78;
+  }
+  .dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+  }
+
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #00f7ff;}
+
+  p{
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: justify;
+  }
+
+  #contexto-titulo{
+  margin-left: 30px;
+  }
+
+  h3{
+    margin-left: 30px;
+  }
+
+  .context{
+    display: inline;
+  }
+
+  .image-aplicacao{
+    height: 30vh;
+    margin-right: 0px;
+    margin-left: 35vw;
+  }
+
+  .faq-item{
     font-size: medium;
   }
 
