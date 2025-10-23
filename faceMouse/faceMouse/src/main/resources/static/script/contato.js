@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-	const form = document.getElementById("cadastroUsuarioForm");
+	const form = document.getElementById("usuarioForm");
 	// armazena os dados numa constante pelo id do html
 
 	form.addEventListener("submit", async (event) => {
@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		
 		try { 
 
-		const response = await fetch("http://localhost:8080/cadastrousuario", { //faz a conexão com a api
+		const response = await fetch("http://localhost:8080/usuarios", { //faz a conexão com a api
 						method: "POST",
 						headers: {
 						"Content-Type": "application/json" //o formato que a api vai receber as informações
