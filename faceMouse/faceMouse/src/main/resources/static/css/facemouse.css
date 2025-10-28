@@ -244,11 +244,11 @@ a{
   }
 
   .facemouse-image{
-    margin-right: 0px;
+    margin-right: 0;
     height: 30vh;
     width: 40vh;
     object-fit: contain;
-    margin-left: 7vw;
+    margin-left: 15%;
   }
 
   .texto, .conteudo{

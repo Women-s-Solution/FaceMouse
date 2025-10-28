@@ -407,7 +407,8 @@ h4{
   .contato{
     margin-left: 0;
     width: 100vw;
-    font-size: small;
+    font-size: 12px;
+    justify-content: center;
   }
 
   .contato img{

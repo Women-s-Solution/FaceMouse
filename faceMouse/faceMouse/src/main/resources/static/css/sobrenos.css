@@ -243,6 +243,7 @@ a:hover{
     'card card'
     'card card';
     padding: 10px;
+    justify-content: center;
   }
 
   .card{
