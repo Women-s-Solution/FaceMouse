@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
 	const container = document.getElementById("lista-mensagens");// armazena o espaço da section do html na const container
 	
 	if(usuarios.length === 0){// se não tiver dados nos usuários
-		container.innerHTML = "<p>Nenhuma mensagem foi enviada.</p>";
+		container.innerHTML = "<p class='erro'>Nenhuma mensagem foi enviada.</p>";
 		return;
 	}
 	
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
    .catch(error => { // caso dê erro
 	console.error("Erro ao carregar mensagens :(", error);
 	document.getElementById("lista-mensagens").innerHTML =
-	"<p>Erro ao carregar mensagens. Tente novamente depois.</p>";
+	"<p class='erro'>Erro ao carregar mensagens. Tente novamente depois.</p>";
    });
    
    //Logout   

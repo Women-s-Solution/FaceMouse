@@ -125,7 +125,7 @@ a:hover{
 }
 
 #btn-admin{
-  margin-left: 37vw;
+  margin-left: 43vw;
   background-color: #253c78;
   color: #fff;
   border: none;
@@ -289,6 +289,10 @@ a:hover{
     margin: 10px;
   }
 
+  #btn-admin{
+    margin-left: 32vw;
+  }
+
   .footer-content p{
     font-size: small;
   }
@@ -381,6 +385,10 @@ a:hover{
   h3{
     font-size: small;
     text-align: center;
+  }
+
+  #btn-admin{
+    margin-left: 40vw;
   }
 
   .footer-content p{
