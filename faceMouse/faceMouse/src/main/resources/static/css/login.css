@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  background: linear-gradient(180deg, #111122, #1c1c33);
+  color: #e0e0e0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.navbar {
+  background-color:#283f78;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  font-family: quicksand;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0px 3px 8px rgba(0,0,0,0.6);
+}
+
+.dropdown{
+  display: none;
+}
+
+.navbar .logo img {
+  height: 60px;
+  
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 25px;
+}
+
+.navbar .menu a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.navbar .menu a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #00f7ff;
+  transition: width 0.3s ease;
+}
+
+.navbar .menu a:hover::after {
+  width: 100%;
+}
+
+.navbar .icones img {
+  height: 30px;
+  margin-left: 15px;
+  cursor: pointer;
+  filter: drop-shadow(0 0 6px #00f7ff);
+}
+
+h3{
+  color: #fff;
+  text-align: left;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+h2{
+    text-align: center;
+    color: #00f7ff;
+    margin-top: 15vh;
+}
+
+/*Formulário*/
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 5vh;
+}
+
+input{
+    padding: 10px;
+    border-radius: 25px;
+}
+
+.email, .senha {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.botoes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+#login {
+  color: #fff;
+  background-color: #283f78;
+  width: 150px;
+  height: 45px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+}
+
+#login:hover {
+  background-color: #39508b;
+  cursor: pointer;
+}
+
+.login{
+  grid-area: 'botao';
+  margin-left: 130px;
+}
+
+#login{
+  color: #fff;
+  background-color: #283f78;
+  width: 190px;
+  height: 50px;
+  border: none;
+}
+
+#login:hover{
+  background-color: #39508b;
+  cursor: pointer;
+}
+
+textarea:hover, input:hover{
+  border: 2px solid #FFD54F;
+}
+
+.contato{
+  display: inline-flex;
+  margin-left: 31%;
+  margin-top: 30px;
+  width: 90vh;
+}
+
+.contato img{
+  margin-left: 10%;
+  width: 30px;
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* transforma em branco */
+  cursor: pointer;
+}
+
+/*Footer*/
+.footer {
+  display: flex;
+  align-items: center;       /* centraliza verticalmente */
+  background-color: #253c78;
+  height: 100%;
+  margin-top: 100px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  padding-right: 20px; /* dá um respiro da borda */
+  justify-content: space-between;
+}
+
+#logo-3 {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+#icones {
+  width: 40px;       /* ajusta tamanho */
+  height: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* transforma em branco */
+  cursor: pointer;   /* dá sensação de botão/link */
+}
+
+.footer-content{
+  justify-content: flex-start;
+  margin-right: 52%;
+}
+
+.footer-content p{
+  color: #fff;
+  display: inline-block;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+#cnpj{
+  font-weight: bold;
+}
+
+.footer .row{
+  display: inline-block;
+  margin-left: 5%;
+}
