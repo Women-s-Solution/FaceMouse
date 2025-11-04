@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
 			window.location.href = 'mensagemRecebida.html';
 			
 			// Também pode armazenar dados no localStorage/sessionStorage, se quiser
-			localStorage.setItem('usuarioLogado', JSON.stringify(usuario));
+			localStorage.setItem('adminLogado', JSON.stringify(admin));
 				})
 				.catch(error => {
 				alert(error.message);
