@@ -124,6 +124,23 @@ a:hover{
     text-decoration: underline #00f7ff;
 }
 
+#btn-admin{
+  margin-left: 37vw;
+  background-color: #253c78;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 5vh;
+  font-family: 'Quicksand';
+}
+
+#btn-admin:hover{
+  border: 1px solid #00f7ff;
+  cursor: pointer;
+  background-color: #1f305c;
+}
+
 /*Footer*/
 .footer {
   display: flex;

@@ -14,6 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         fetch(`http://localhost:8080/usuarios/${usuarioId}`)
             .then(response => response.json()) // Converte a resposta para JSON
             .then(usuario => {
+				
                 // Atualiza o autor da mensagem
                 document.getElementById("usuario-nome").textContent = usuario.nome;
 				

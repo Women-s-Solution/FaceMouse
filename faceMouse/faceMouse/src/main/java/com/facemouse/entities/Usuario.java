@@ -53,7 +53,7 @@ public class Usuario {
 		this.idUsuario = idUsuario;
 	}
 
-	public String getNomeUsuario() {
+	public String getNome() {
 		return nome;
 	}
 
