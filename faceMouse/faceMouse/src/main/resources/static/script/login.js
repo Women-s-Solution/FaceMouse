@@ -31,8 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
 				throw new Error('Erro na autenticação.');
 					}
 					})
-				.then(usuario => {
-				alert('Login realizado com sucesso! Bem-vindo, ' + usuario.nome);
 			// Aqui você pode redirecionar para a página de mensagem recebida:
 			window.location.href = 'mensagemRecebida.html';
 			
@@ -42,5 +40,4 @@ document.addEventListener('DOMContentLoaded', () => {
 				.catch(error => {
 				alert(error.message);
 				});
-			});
 			});
