@@ -248,7 +248,8 @@ h3{
 
   /* Dropdown Button */
   .dropbtn img {
-    height: 60px;
+    height: 50px;
+    filter: brightness(0) invert(1);
   }
 
   .dropdown button{
@@ -279,7 +280,7 @@ h3{
 
   .dropdown:hover .dropdown-content {display: block;}
 
-  .dropdown:hover .dropbtn {background-color: #00f7ff;}
+  .dropdown:hover .dropbtn {background-color: #253c78; cursor: pointer;}
 
   p{
   margin-left: 40px;
@@ -331,7 +332,8 @@ h3{
 
   /* Dropdown Button */
   .dropbtn img {
-    height: 60px;
+    height: 50px;
+    filter: brightness(0) invert(1);
   }
 
   .dropdown button{
@@ -361,7 +363,7 @@ h3{
 
   .dropdown:hover .dropdown-content {display: block;}
 
-  .dropdown:hover .dropbtn {background-color: #00f7ff;}
+  .dropdown:hover .dropbtn {background-color: #253c78; cursor: pointer;}
 
   p{
   margin-left: 40px;

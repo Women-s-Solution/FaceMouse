@@ -243,7 +243,8 @@ a{
 
   /* Dropdown Button */
   .dropbtn img {
-    height: 60px;
+    height: 50px;
+    filter: brightness(0) invert(1);
   }
 
   .dropdown button{
@@ -274,7 +275,7 @@ a{
 
   .dropdown:hover .dropdown-content {display: block;}
 
-  .dropdown:hover .dropbtn {background-color: #00f7ff;}
+  .dropdown:hover .dropbtn {background-color: #253c78; cursor: pointer;}
 
   .hero img {
     height: 40vh;
@@ -329,7 +330,8 @@ a{
 
   /* Dropdown Button */
   .dropbtn img {
-    height: 60px;
+    height: 50px;
+    filter: brightness(0) invert(1);
   }
 
   .dropdown button{
@@ -360,7 +362,7 @@ a{
 
   .dropdown:hover .dropdown-content {display: block;}
 
-  .dropdown:hover .dropbtn {background-color: #00f7ff;}
+  .dropdown:hover .dropbtn {background-color: #253c78; cursor: pointer;}
 
   .hero img {
     height: 40vh;
