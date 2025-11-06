@@ -21,26 +21,6 @@ public class AdminController {
 	@Autowired
 	private AdminService adminService;
 	
-	@PostMapping
-	public Admin createAdmin(@RequestBody Admin admin) {
-		return adminService.saveAdmin(admin);
-	}
-	
-	@GetMapping
-	public List<Admin> getAllAdmin() {
-		return adminService.getAllAdmin();
-	}
-	
-	@GetMapping("/{id}")
-	public Admin getAdminById(@PathVariable Long id) {
-		return adminService.getAdminById(id);
-	}
-	
-	@DeleteMapping("/{id}")
-	public void deleteAdminById(@PathVariable Long id) {
-		adminService.deleteAdmin(id);
-	}
-	
 	//Método para o login
 	@PostMapping("/login")
 	public Admin login(@RequestBody Admin loginRequest) {
@@ -53,4 +33,25 @@ public class AdminController {
 			return null;
 		}
 	}
+	
+	@PostMapping
+	public Admin createAdmin(@RequestBody Admin admin) {
+		return adminService.saveAdmin(admin);
+	}
+	
+	@GetMapping
+	public List<Admin> getAllAdmin() {
+		return adminService.getAllAdmin();
+	}
+	
+	@GetMapping("/id/{id}")
+	public Admin getAdminById(@PathVariable Long id) {
+		return adminService.getAdminById(id);
+	}
+	
+	@DeleteMapping("/id/{id}")
+	public void deleteAdminById(@PathVariable Long id) {
+		adminService.deleteAdmin(id);
+	}
+	
 }

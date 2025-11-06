@@ -1,59 +1,39 @@
 package com.facemouse.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
+// Opcional (impede vazar senha se alguém retornar a entidade inteira):
+// import com.fasterxml.jackson.annotation.JsonProperty;
 
 @Entity
 @Table(name = "tb_admin")
 public class Admin {
 
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	@Column(name = "id_admin")
-	private Long idAdmin;
-	
-	@Column(name = "email")
-	private String email;
-	
-	@Column(name = "senha")
-	private String senha;
-	
-	public Admin() {
-		
-	}
-	
-	public Admin(Long idAdmin, String email, String senha) {
-		this.idAdmin = idAdmin;
-		this.email = email;
-		this.senha = senha;
-	}
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_admin")
+    private Long idAdmin;
 
-	public Long getIdAdmin() {
-		return idAdmin;
-	}
+    @Column(name = "email", nullable = false, unique = true, length = 255)
+    private String email;
 
-	public void setIdAdmin(Long idAdmin) {
-		this.idAdmin = idAdmin;
-	}
+    // @JsonProperty(access = JsonProperty.Access.WRITE_ONLY) // opcional
+    @Column(name = "senha", nullable = false, length = 255)
+    private String senha;
 
-	public String getEmail() {
-		return email;
-	}
+    public Admin() {}
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
+    public Admin(Long idAdmin, String email, String senha) {
+        this.idAdmin = idAdmin;
+        this.email = email;
+        this.senha = senha;
+    }
 
-	public String getSenha() {
-		return senha;
-	}
+    public Long getIdAdmin() { return idAdmin; }
+    public void setIdAdmin(Long idAdmin) { this.idAdmin = idAdmin; }
 
-	public void setSenha(String senha) {
-		this.senha = senha;
-	}
-	
+    public String getEmail() { return email; }
+    public void setEmail(String email) { this.email = email; }
+
+    public String getSenha() { return senha; }
+    public void setSenha(String senha) { this.senha = senha; }
 }
